@@ -20,8 +20,11 @@ public class Program {
 		System.out.println("\n---- Test #2: FindByDepartment ----");
 		Department dep = new Department(2, null);
 		List<Seller> list = sellerDao.findByDepartment(dep);
-		list.forEach(System.out::println);
+		list.forEach(System.out::println);		
 		
+		System.out.println("\n---- Test #3: FindAll ----");
+		List<Seller> list2 = sellerDao.findAll();
+		list2.forEach(System.out::println);	
 	}
 
 }
